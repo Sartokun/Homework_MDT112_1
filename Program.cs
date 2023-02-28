@@ -4,21 +4,22 @@ class Program {
     static void Main(string[] args) {
 
         //รับเลข 6 หลัก
-        Console.Write("Please enter 6 digit numder : ");
-        string numder = Console.ReadLine();
+        Console.Write("Please enter 6 digit number : ");
+        string number = Console.ReadLine();
 
         //ตรวจาสอบเลข 6 หลัก
-        if (numder.Length != 6) {
+        if (number.Length != 6) {
             Console.WriteLine("You entered an invalid number.");
+            return;
         }
 
         //ตรวจสอบว่าเป็นตัวเลขหรือไม่?
-        int num1 = numder[0] - '0';
-        int num2 = numder[1] - '0';
-        int num3 = numder[2] - '0';
-        int num4 = numder[3] - '0';
-        int num5 = numder[4] - '0';
-        int num6 = numder[5] - '0';
+        int num1 = number[0] - '0';
+        int num2 = number[1] - '0';
+        int num3 = number[2] - '0';
+        int num4 = number[3] - '0';
+        int num5 = number[4] - '0';
+        int num6 = number[5] - '0';
 
         Console.WriteLine("{0},{1},{2},{3},{4},{5}",num1, num2, num3, num4, num5, num6);
 
@@ -30,6 +31,7 @@ class Program {
             num6 < 0 || num6 > 9
         ) {
             Console.WriteLine("Please enter 6 digit only");
+            return;
         }
 
     }
