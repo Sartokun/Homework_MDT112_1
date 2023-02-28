@@ -34,5 +34,11 @@ class Program {
             return;
         }
 
+        //รับค่ารหัสอักษรย่อ
+        Console.Write("Please enter your agency : ");
+        string agency = Console.ReadLine();
+
+
+
     }
 }
