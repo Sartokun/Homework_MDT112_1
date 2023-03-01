@@ -23,12 +23,12 @@ class Program {
 
         //Console.WriteLine("{0},{1},{2},{3},{4},{5}",num1, num2, num3, num4, num5, num6);
 
-        if (num1 < 0 || num1 > 9 ||
-            num2 < 0 || num2 > 9 ||
-            num3 < 0 || num3 > 9 ||
-            num4 < 0 || num4 > 9 ||
-            num5 < 0 || num5 > 9 ||
-            num6 < 0 || num6 > 9
+        if (num1 <= 0 || num1 > 9 ||
+            num2 <= 0 || num2 > 9 ||
+            num3 <= 0 || num3 > 9 ||
+            num4 <= 0 || num4 > 9 ||
+            num5 <= 0 || num5 > 9 ||
+            num6 <= 0 || num6 > 9
         ) {
             Console.WriteLine("You entered an invalid number.");
             return;
